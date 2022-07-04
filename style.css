@@ -7,7 +7,7 @@
   list-style: none;
   text-decoration: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 .container {
@@ -20,13 +20,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 :focus {
@@ -39,12 +39,12 @@
 }
 
 .h2 h2 {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 53px;
-  color: #F2785C;
+  color: #f2785c;
   margin: 80px 0px 40px 0;
 }
 
@@ -58,7 +58,7 @@ header {
 header nav {
   background: rgba(242, 120, 92, 0.7);
   -webkit-box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-          box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
   padding: 25px 0 24px;
 }
 
@@ -67,17 +67,17 @@ header nav .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header nav .logo h3 {
-  font-family: 'Magra';
+  font-family: "Magra";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 6px;
 }
 
@@ -86,45 +86,47 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 42px;
 }
 
 header nav ul li a {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 header nav .login {
   width: 103px;
   height: 41px;
-  background: #0D606F;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  background: #0d606f;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 header nav .login a {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 header .header_center .head_text {
@@ -137,18 +139,18 @@ header .header_center .head_text h1 {
   font-weight: 700;
   font-size: 80px;
   line-height: 96px;
-  color: #FFFFFF;
-  font-family: 'Aleo';
+  color: #ffffff;
+  font-family: "Aleo";
   margin-bottom: 54px;
 }
 
 header .header_center .head_text p {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 header .header_center .head_text form {
@@ -160,54 +162,56 @@ header .header_center .head_text form {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 18px 18px 18px 41px;
   margin-top: 46px;
 }
 
 header .header_center .head_text form input {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   width: 560px;
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #F2785C;
+  color: #f2785c;
   background: none;
   border: none;
   margin-right: 45px;
 }
 
 header .header_center .head_text form input::-webkit-input-placeholder {
-  color: #F2785C;
+  color: #f2785c;
 }
 
 header .header_center .head_text form input:-ms-input-placeholder {
-  color: #F2785C;
+  color: #f2785c;
 }
 
 header .header_center .head_text form input::-ms-input-placeholder {
-  color: #F2785C;
+  color: #f2785c;
 }
 
 header .header_center .head_text form input::placeholder {
-  color: #F2785C;
+  color: #f2785c;
 }
 
 header .header_center .head_text form button {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 228px;
   height: 59px;
-  background: #0D606F;
-  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  background: #0d606f;
+  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -219,11 +223,11 @@ main .main_cards {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 17px;
 }
 
@@ -233,11 +237,11 @@ main .main_cards .main_cart {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main .main_cards .main_cart .main_icon {
@@ -245,25 +249,25 @@ main .main_cards .main_cart .main_icon {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
-  background: #F2785C;
+  background: #f2785c;
   border-radius: 16px;
 }
 
 main .main_cards .main_cart h4 {
   margin-top: 30px;
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #0D606F;
+  color: #0d606f;
 }
 
 section {
@@ -277,8 +281,8 @@ section .section_slide {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 60px;
   margin-bottom: 24px;
 }
@@ -305,12 +309,12 @@ section .section_slide .slide_img .slide_h3 {
 }
 
 section .section_slide .slide_img .slide_h3 h3 {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 42px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 section .slide_items {
@@ -321,11 +325,11 @@ section .slide_items {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -338,36 +342,38 @@ section .slide_items .s_item {
 }
 
 section .slide_items .s_item:nth-child(2) {
-  background: #F2785C;
+  background: #f2785c;
 }
 
 .more_button button {
   width: 228px;
   height: 59px;
-  background: #0D606F;
-  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  background: #0d606f;
+  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   padding: 18.25px 0;
   margin: auto;
   margin-top: 40px;
   text-align: center;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -404,19 +410,19 @@ section .slide_items .s_item:nth-child(2) {
   margin-right: 40px;
   min-width: 400px;
   height: 250px;
-  -webkit-filter: drop-shadow(0px 4px 4px #0D606F);
-          filter: drop-shadow(0px 4px 4px #0D606F);
+  -webkit-filter: drop-shadow(0px 4px 4px #0d606f);
+  filter: drop-shadow(0px 4px 4px #0d606f);
   border-radius: 16px;
   overflow: hidden;
 }
 
 .all ._sec_foot section .travel_cards .tr_cart .tr_text h3 {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 42px;
-  color: #0D606F;
+  color: #0d606f;
   margin-bottom: 24px;
 }
 
@@ -425,19 +431,19 @@ section .slide_items .s_item:nth-child(2) {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  font-family: 'Aleo';
-  color: #0D606F;
+  font-family: "Aleo";
+  color: #0d606f;
 }
 
 .all ._sec_foot section .travel_cards .tr_cart .tr_text a {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #0D606F;
+  text-decoration-line: underline;
+  color: #0d606f;
 }
 
 .all ._sec_foot footer {
@@ -449,8 +455,8 @@ section .slide_items .s_item:nth-child(2) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .all ._sec_foot footer .foot_div {
@@ -459,11 +465,11 @@ section .slide_items .s_item:nth-child(2) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .all ._sec_foot footer .foot_div .foot_h4 h4 {
@@ -471,8 +477,8 @@ section .slide_items .s_item:nth-child(2) {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
-  font-family: 'Red Hat Text';
+  color: #ffffff;
+  font-family: "Red Hat Text";
 }
 
 .all ._sec_foot footer .foot_div .foot_icons {
@@ -480,11 +486,319 @@ section .slide_items .s_item:nth-child(2) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .all ._sec_foot footer .foot_div .foot_icons img {
   margin-left: 21.31px;
 }
-/*# sourceMappingURL=style.css.map */
+.media_slide_390 {
+  display: none;
+}
+.slide_items_390 {
+  display: none;
+}
+
+header nav ul .li_390 {
+  display: none;
+}
+.bars {
+  display: none;
+}
+@media (max-width: 576px) {
+  header nav {
+    background: transparent;
+    box-shadow: unset;
+    padding-top: 44px;
+  }
+  header nav .logo h3 {
+    display: none;
+  }
+  header nav ul {
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: #f2785c;
+    width: 165px;
+    height: 250px;
+    background: #f2785c;
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .active_menu {
+    position: absolute;
+    right: 0;
+  }
+  .close_bg {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  header nav ul li {
+    margin-bottom: 10px;
+    text-align: end;
+  }
+  .close {
+    margin-bottom: 13.6px;
+    cursor: pointer;
+  }
+  .bars {
+    display: block;
+    margin-right: 5px;
+  }
+  .bars img,
+  .close img {
+    cursor: pointer;
+  }
+  header nav ul .li_390 {
+    display: block;
+  }
+
+  .container,
+  header .header_center .head_text {
+    width: 360px;
+  }
+  header .header_center .head_text form {
+    width: 360px;
+    height: 48px;
+    padding: 18px;
+    padding-right: 10px;
+    padding-left: 17px;
+    margin-top: 38px;
+  }
+  header .header_center .head_text form input {
+    font-size: 14px;
+    width: 226px;
+  }
+  header .header_center .head_text form button {
+    font-size: 11px;
+    width: 105px;
+    height: 32px;
+  }
+  header nav .login {
+    display: none;
+  }
+  header .header_center .head_text p,
+  header .header_center .head_text h1 {
+    display: none;
+  }
+  header {
+    height: 251px;
+    background: url("./img/garrett-parker-DlkF4-dbCOU-unsplash 2.png") no-repeat
+      center center / cover;
+      box-shadow:inset 0px 34px 34px #31636c;
+      overflow: hidden !important;
+  }
+
+  .h2 h2 {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: unset;
+  }
+  main .main_cards .main_cart h4 {
+    font-size: 10px;
+  }
+  main .main_cards .main_cart .main_icon {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  main .main_cards .main_cart .main_icon:first-child {
+    width: 68px;
+    height: 72px;
+    margin-top: 2px;
+  }
+  main .main_cards .main_cart .main_icon:nth-child(2) {
+    height: 70px;
+  }
+  main .main_cards .main_cart .main_icon img {
+    width: 35px;
+    height: 35px;
+  }
+
+  main .main_cards .main_cart h4 {
+    line-height: unset;
+  }
+  main .main_cards .main_cart:first-child {
+    align-items: flex-start;
+    width: 27%;
+  }
+  main .main_cards .main_cart:last-child {
+    align-items: flex-end;
+    text-align: end;
+    width: 30%;
+  }
+  main .main_cards .main_cart h4 {
+    margin-top: 19px;
+  }
+  main .main_cards .main_cart:nth-child(2) {
+    text-align: center;
+    margin-left: 9px;
+    margin-top: -12px;
+  }
+  main .main_cards {
+    margin-bottom: 0;
+  }
+  section .section_slide {
+    display: none;
+  }
+  .media_slide_390 {
+    display: block;
+    position: relative;
+  }
+  .media_slide_390 img {
+    width: 100%;
+    border-radius: 16px;
+  }
+  .media_slide_390 h3 {
+    position: absolute;
+    left: 7.8%;
+    top: 4%;
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #ffffff;
+  }
+  .ind_slide_390_1 {
+    height: 33px !important;
+    width: 20px !important;
+    position: absolute;
+    left: 6%;
+    top: 42%;
+  }
+  .ind_slide_390_2 {
+    height: 33px !important;
+    width: 20px !important;
+    position: absolute;
+    right: 6%;
+    top: 42%;
+  }
+  .slide_items {
+    display: none !important;
+  }
+  .slide_items_390 {
+    position: absolute;
+    bottom: 7%;
+    left: 45%;
+    width: 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slide_items_390 .s_item__390 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(242, 120, 92, 0.5);
+    transition: 0.3s;
+  }
+  .slide_items_390 .s_item__390:first-child {
+    background: #f2785c;
+  }
+  .slide_items_390 .s_item__390:hover {
+    background: #f2785c;
+  }
+  .more_button button {
+    width: 92px;
+    height: 26px;
+    line-height: unset;
+    padding: 14.25px 1px;
+    margin-top: 7px;
+    font-size: 11px;
+  }
+  .more_button button svg {
+    width: 10px;
+    margin-right: 6px;
+  }
+  .travel_cards {
+    display: none;
+  }
+  .all .h2 h2 {
+    margin-bottom: 13px;
+  }
+
+  .travel_cards_390 {
+    padding-top: 11px;
+  }
+  .travel_cards_390 .tr_cart {
+    display: flex;
+    margin-bottom: 11px;
+  }
+  .travel_cards_390 .tr_cart .tr_img img {
+    filter: drop-shadow(0px 4px 4px #0d606f);
+    border-radius: 16px;
+  }
+
+  .travel_cards_390 .tr_cart .tr_text h3 {
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: #0d606f;
+    margin-bottom: 10px;
+  }
+  .travel_cards_390 .tr_cart .tr_text p {
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+
+    color: #0d606f;
+  }
+  .travel_cards_390 .tr_cart .tr_text a {
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    display: block;
+    margin-top: 0px;
+    text-decoration-line: underline;
+    color: #0d606f;
+  }
+  .travel_cards_390 .tr_cart .tr_text {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  .all ._sec_foot {
+    background: url("./img/Rectangle28.png") no-repeat center bottom / cover;
+  }
+  .all .more_button {
+    margin-top: -6px;
+    display: block;
+  }
+  .foot_h4 {
+    display: none;
+  }
+  .all ._sec_foot footer .foot_div {
+    justify-content: center;
+  }
+  .all ._sec_foot footer {
+    padding: 0;
+    padding: 14px 0px 12px 0 !important;
+  }
+  .all ._sec_foot section {
+    padding-bottom: 15px;
+  }
+  
+  .all ._sec_foot footer .foot_div .foot_icons img {
+    margin-left: 0;
+  }
+  .foot_icons{
+    margin-left: 5px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
