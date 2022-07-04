@@ -493,16 +493,11 @@ section .slide_items .s_item:nth-child(2) {
 .all ._sec_foot footer .foot_div .foot_icons img {
   margin-left: 21.31px;
 }
-.media_slide_390 {
-  display: none;
-}
-.slide_items_390 {
-  display: none;
-}
 
-header nav ul .li_390 {
-  display: none;
-}
+.slide_items_390,
+.media_slide_390,
+header nav ul .li_390,
+.travel_cards_390,
 .bars {
   display: none;
 }
@@ -749,6 +744,9 @@ header nav ul .li_390 {
     color: #0d606f;
     margin-bottom: 10px;
   }
+  .travel_cards_390{
+    display: block;
+  }
   .travel_cards_390 .tr_cart .tr_text p {
     font-family: "Aleo";
     font-style: normal;
@@ -794,10 +792,11 @@ header nav ul .li_390 {
   
   .all ._sec_foot footer .foot_div .foot_icons img {
     margin-left: 0;
+    width: 30px;
   }
   .foot_icons{
     margin-left: 5px;
-    width: 140px;
+    width: 190px;
     display: flex;
     justify-content: space-between;
   }
