@@ -9,9 +9,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box !important;
 }
-body{
-  background: #FFFFFF;
-
+body {
+  background: #ffffff;
 }
 
 .container {
@@ -173,7 +172,6 @@ header .header_center .head_text form {
 }
 
 header .header_center .head_text form input {
-  font-family: "Aleo";
   width: 560px;
   font-family: "Aleo";
   font-style: italic;
@@ -810,16 +808,17 @@ header nav ul .li_390,
   }
 }
 
-.login_bg{
+.login_bg {
   width: 100%;
   height: 100vh;
   background: transparent;
   position: absolute;
-  top: -100%;
-  transition: .5s;
+  top: 0;
+ display: none;
   background: rgba(0, 0, 0, 0.2);
-
 }
+
+.register,
 .logindiv {
   position: absolute;
   margin: auto;
@@ -834,8 +833,14 @@ header nav ul .li_390,
   z-index: 100;
   text-align: center;
   padding: 0 45px;
-  transition: .5s;
+  transition: 0.5s;
 }
+.register{
+  height: auto;
+  display: none;
+  top: 50% !important;
+}
+.register .logintitle h2,
 .logindiv .logintitle h2 {
   font-family: "Aleo";
   font-style: normal;
@@ -881,7 +886,9 @@ header nav ul .li_390,
   border-radius: 10px;
   cursor: pointer;
 }
-
+/* .register{
+  display: none;
+} */
 .logindiv .login_google p {
   margin-left: 15.5px;
   font-family: "Red Hat Text";
@@ -921,10 +928,12 @@ header nav ul .li_390,
   border: 1px solid rgba(13, 96, 111, 0.5);
   top: 12.5px;
 }
+.register form,
 .logindiv form {
   text-align: start !important;
   color: #0d606f;
 }
+.register form label,
 .logindiv form label {
   font-family: "Aleo";
   font-style: normal;
@@ -934,9 +943,7 @@ header nav ul .li_390,
   display: block;
   padding-bottom: 5px;
 }
-:focus {
-  outline: none;
-}
+.register input,
 .logindiv input {
   width: 100%;
   border: none;
@@ -949,6 +956,7 @@ header nav ul .li_390,
   border-radius: 10px;
   margin-bottom: 20px;
 }
+.register button,
 .logindiv button {
   display: flex;
   flex-direction: row;
@@ -968,10 +976,11 @@ header nav ul .li_390,
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-margin-top: 5px;
+  margin-top: 5px;
   color: #ffffff;
   cursor: pointer;
 }
+.register .title_your a,
 .logindiv .title_your a {
   font-family: "Aleo";
   font-style: normal;
@@ -986,19 +995,28 @@ margin-top: 5px;
   display: block;
   border-bottom: 1px solid rgba(13, 96, 111, 0.5);
 }
-.logindiv .title_bottom p{
-  font-family: 'Aleo';
+.register .title_bottom p,
+.logindiv .title_bottom p {
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  
+
   margin-bottom: 23px;
   color: rgba(13, 96, 111, 0.5);
-  
+
   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
 }
-.logindiv .title_bottom a{
-text-decoration: underline;
-  color: #0D606F;
+
+.register .title_bottom p{
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(13, 96, 111, 0.5);
 }
+.register .title_bottom a,
+.logindiv .title_bottom a {
+  text-decoration: underline;
+  color: #0d606f;
+}
+
