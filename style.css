@@ -9,6 +9,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box !important;
 }
+body{
+  background: #FFFFFF;
+
+}
 
 .container {
   width: 1200px;
@@ -590,9 +594,9 @@ header nav ul .li_390,
     height: 251px;
     background: url("./img/garrett-parker-DlkF4-dbCOU-unsplash 2.png") no-repeat
       center center / cover;
-      box-shadow:inset 0px 34px 34px #31636c;
-      overflow: hidden !important;
-      position: relative;
+    box-shadow: inset 0px 34px 34px #31636c;
+    overflow: hidden !important;
+    position: relative;
   }
 
   .h2 h2 {
@@ -745,7 +749,7 @@ header nav ul .li_390,
     color: #0d606f;
     margin-bottom: 10px;
   }
-  .travel_cards_390{
+  .travel_cards_390 {
     display: block;
   }
   .travel_cards_390 .tr_cart .tr_text p {
@@ -790,18 +794,211 @@ header nav ul .li_390,
   .all ._sec_foot section {
     padding-bottom: 15px;
   }
-  
+
   .all ._sec_foot footer .foot_div .foot_icons img {
     margin-left: 0;
     width: 30px;
   }
-  .foot_icons{
+  .foot_icons {
     margin-left: 5px;
     width: 190px;
     display: flex;
     justify-content: space-between;
   }
-  .github{
+  .github {
     display: block;
   }
+}
+
+.login_bg{
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  position: absolute;
+  top: -100%;
+  transition: .5s;
+  background: rgba(0, 0, 0, 0.2);
+
+}
+.logindiv {
+  position: absolute;
+  margin: auto;
+  width: 650px;
+  height: 660px;
+  background: linear-gradient(177.09deg, #ffffff 6.15%, #0d606f 202.69%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+  top: -100%;
+  left: 50%;
+  z-index: 100;
+  text-align: center;
+  padding: 0 45px;
+  transition: .5s;
+}
+.logindiv .logintitle h2 {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #0d606f;
+  margin-top: 25px;
+}
+
+.logindiv .login_facebook {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1877f2;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 16.57px 0;
+}
+.logindiv .login_facebook p {
+  margin-left: 15.5px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.logindiv .login_google {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  padding: 16.57px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logindiv .login_google p {
+  margin-left: 15.5px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #0d606f;
+}
+.logindiv .login_or p {
+  margin-top: 30px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+  position: relative;
+  margin-bottom: 10px;
+}
+.logindiv .login_or p::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 261px;
+  height: 0px;
+  border: 1px solid rgba(13, 96, 111, 0.5);
+  top: 12.5px;
+}
+.logindiv .login_or p::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 261px;
+  height: 0px;
+  right: 0;
+  border: 1px solid rgba(13, 96, 111, 0.5);
+  top: 12.5px;
+}
+.logindiv form {
+  text-align: start !important;
+  color: #0d606f;
+}
+.logindiv form label {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+  padding-bottom: 5px;
+}
+:focus {
+  outline: none;
+}
+.logindiv input {
+  width: 100%;
+  border: none;
+  height: 54px;
+  font-size: 20px;
+  padding: 0 20px;
+  background: #ffffff;
+  box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08),
+    inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.logindiv button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 229px;
+  gap: 10px;
+  width: 560px;
+  height: 54px;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+margin-top: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.logindiv .title_your a {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #0d606f;
+  margin-top: 10px;
+  padding-bottom: 26px;
+  margin-bottom: 20px;
+  display: block;
+  border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+}
+.logindiv .title_bottom p{
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  
+  margin-bottom: 23px;
+  color: rgba(13, 96, 111, 0.5);
+  
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+.logindiv .title_bottom a{
+text-decoration: underline;
+  color: #0D606F;
 }
