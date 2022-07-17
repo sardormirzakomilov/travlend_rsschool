@@ -828,7 +828,7 @@ header nav ul .li_390,
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   transform: translate(-50%, -50%);
-  top: -100%;
+  top: -200%;
   left: 50%;
   z-index: 100;
   text-align: center;
@@ -838,7 +838,7 @@ header nav ul .li_390,
 .register{
   height: auto;
   display: none;
-  top: 50% !important;
+  top: 50%;
 }
 .register .logintitle h2,
 .logindiv .logintitle h2 {
@@ -1018,5 +1018,34 @@ header nav ul .li_390,
 .logindiv .title_bottom a {
   text-decoration: underline;
   color: #0d606f;
+}
+
+.login_p_active{
+  top: 50%;
+  display: block;
+}
+.login_p_off{
+  display: none;
+}
+.login_p_on{
+  top: 50%;
+  display: block;
+}
+.register_p_off{
+  display: none;
+}
+.register_p_100{
+  position: absolute;
+top:-100%;
+display: block;
+}
+.register_p_active{
+display: block;
+top: 50%;
+}
+
+.login_bg_active{
+display: block;
+
 }
 
