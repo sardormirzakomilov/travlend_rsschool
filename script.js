@@ -2,12 +2,14 @@ let close = document.querySelector('.close img');
 let bars = document.querySelector('.bars img');
 let close_bg = document.querySelector('.close_bg');
 let menu = document.querySelector('header nav ul');
+let media_slide_390 = document.querySelector('.media_slide_390');
 
 close.style.display = 'none'
 bars.addEventListener('click', function (e) {
     menu.style.right = 0;
     close_bg.style.display = 'block'
     close.style.display = 'block'
+    media_slide_390.style.zIndex = -1;
 
 })
 
@@ -24,25 +26,34 @@ namee(close_bg)
 
 
 let login = document.querySelector('.login a');
+const logAccount = document.querySelector('.Account');
 let login_bg = document.querySelector('.login_bg');
 let logindiv = document.querySelector('.logindiv');
 let register = document.querySelector('.register');
 let register_buttonA = document.querySelector('.login__');
 let login_buttonA = document.querySelector('.register__');
 
-let body = document.querySelector('body');
 
-login.addEventListener('click', function (e) {
+const body = document.querySelector('body');
+
+login.addEventListener('click', funk1)
+logAccount.addEventListener('click', funk1)
+function funk1(e) {
     logindiv.classList.remove('login_p_off')
     logindiv.classList.add('login_p_active')
     login_bg.classList.add('login_bg_active')
-})
+    body.style.overflow = 'hidden'
+    body.style.paddingRight = '17px'
+
+}
 
 login_bg.addEventListener('click', function (e) {
     logindiv.classList.remove('login_p_active')
     login_bg.classList.remove('login_bg_active')
     register.classList.add('register_p_100')
     register.classList.remove('register_p_active')
+    body.style.overflow = 'auto'
+    body.style.paddingRight = '0'
 
 })
 
@@ -71,66 +82,111 @@ but_signUp.addEventListener('click', function () {
 })
 
 // ==================================== slider=======================================
+let all = document.querySelector('.section_slide')
+let a = document.querySelector('#slide_img1 img')
+let b = document.querySelector('#slide_img2 img')
+let c = document.querySelector('#slide_img3 img')
+let a_item = document.querySelector('.slide_items .item1_')
+let b_item = document.querySelector('.slide_items .item2_')
+let c_item = document.querySelector('.slide_items .item3_')
+let All_item = document.querySelectorAll('.slide_items .s_item')
+// ========================================================
+a.addEventListener('click', slideA)
+a_item.addEventListener('click', slideA)
 
-let slider_div = document.querySelector('.section_slide')
-let slide_img = Array.from(document.querySelectorAll('.slide_img'))
+function slideA() {
+    all.style.transform = 'translateX(870px)'
+    All_item[0].classList.add('s_item_activeee')
+    All_item[1].classList.remove('s_item_activeee')
+    All_item[2].classList.remove('s_item_activeee')
 
-let birnarsa = false
-startPos = 0
-currentTranslate = 0
-prevTranslate = 0
-animeId = 0
-corentIndex = 0
+}
+// ========================================================
+b.addEventListener('click', slideB)
+b_item.addEventListener('click', slideB)
 
-slide_img.forEach((slid, i) => {
+function slideB() {
+    all.style.transform = 'translateX(0px)'
 
-    slid.addEventListener('touchstart', touchStart(i))
-    slid.addEventListener('touchend', touchEnd)
-    slid.addEventListener('touchmove', touchMove)
+    All_item[0].classList.remove('s_item_activeee')
+    All_item[1].classList.add('s_item_activeee')
+    All_item[2].classList.remove('s_item_activeee')
+}
+// =========================================================
+c.addEventListener('click', slideC)
+c_item.addEventListener('click', slideC)
 
-    slid.addEventListener('mousedown', touchStart(i))
-    slid.addEventListener('mouseup', touchEnd)
-    slid.addEventListener('mouseleave', touchEnd)
-    slid.addEventListener('mousemove', touchMove)
-})
-
-window.oncontextmenu = function (e) {
-    e.preventDefault()
-    e.stopPropagation()
-    return false;
+function slideC() {
+    all.style.transform = 'translateX(-870px)'
+    All_item[0].classList.remove('s_item_activeee')
+    All_item[1].classList.remove('s_item_activeee')
+    All_item[2].classList.add('s_item_activeee')
 }
 
-function touchStart(i) {
-    return function (e) {
-        corentIndex = i
-        startPos = getPositionX(e)
-        birnarsa = true
-        animeId = requestAnimationFrame(animation)
+let prev_390 = document.querySelector('.ind_slide_390_1')
+let next_390 = document.querySelector('.ind_slide_390_2')
+let all_390 = document.querySelectorAll('.media_slide_390 .container ._390_img_div')
+// let MALDIV = document.querySelector('.MALDIV')
+
+let widthImg = 0
+all_390.forEach((_, i) => {
+    next_390.addEventListener('click', next_390_);
+    prev_390.addEventListener('click', prev_390_);
+    function next_390_() {
+        widthImg = widthImg + all_390[0].offsetWidth + 30
+        if (widthImg >= 390) {
+            widthImg = 390
+        }
+        all_390[i].style.transform = `translateX(${widthImg}px)`
+    }
+    function prev_390_() {
+        widthImg = widthImg - all_390[1].offsetWidth + 30
+        if (widthImg >= -390) {
+            widthImg = 390
+        }
+        all_390[i].style.transform = `translateX(${widthImg}px)`
+    }
+});
+
+
+
+
+// ============================== media =============================
+function myFunction(x320, x768, x990) {
+    if (x990.matches) {
+        a.addEventListener('click', slideA)
+        a_item.addEventListener('click', slideA)
+        function slideA() {
+            all.style.transform = 'translateX(400px)'
+        }
+
+        c.addEventListener('click', slideC)
+        c_item.addEventListener('click', slideC)
+
+        function slideC() {
+            all.style.transform = 'translateX(-420px)'
+        }
+
+        // ================================================================
+        function namee(params) {
+            params.addEventListener('click', function (e) {
+                menu.style.right = "-55%";
+            })
+        }
+        namee(close)
+        namee(close_bg)
     }
 }
-function touchEnd() {
-    birnarsa = false
-    // console.log(false)
-}
-function touchMove() {
-    if (birnarsa) {
-       const correntPosition = getPositionX(e)
-    }
-}
 
-function getPositionX(e) {
-  return e.type.includes('mouse') 
-        ? e.pageX 
-        : e.touches[0].clientX
-        console.log(startPos);
-}
+const media575 = window.matchMedia("(max-width: 575px)");
+const media767 = window.matchMedia("(max-width: 767px)");
+const media991 = window.matchMedia("(max-width: 991px)");
 
-function animation() {
-    setSliderPosition()
-    if (birnarsa) requestAnimationFrame(animation)
-}
-function setSliderPosition() {
-    slider_div.style.transform = `tranlateX(${currentTranslate})px` 
-}
+// Call the match function at run time:
+myFunction(media575, media767, media991);
 
+// Add the match function as a listener for state changes:
+media575.addListener(myFunction);
+media767.addListener(myFunction);
+media991.addListener(myFunction);
 
