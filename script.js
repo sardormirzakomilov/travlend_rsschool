@@ -125,28 +125,57 @@ function slideC() {
 
 let prev_390 = document.querySelector('.ind_slide_390_1')
 let next_390 = document.querySelector('.ind_slide_390_2')
-let all_390 = document.querySelectorAll('.media_slide_390 .container ._390_img_div')
-// let MALDIV = document.querySelector('.MALDIV')
+let all_390 = document.querySelectorAll('.media_slide_390 .container ._390_img_div img')
+let cont_390 = document.querySelector('.media_slide_390 .container')
+let _item1 = document.querySelector('._item1')
+let _item2 = document.querySelector('._item2')
+let _item3 = document.querySelector('._item3')
 
-let widthImg = 0
-all_390.forEach((_, i) => {
-    next_390.addEventListener('click', next_390_);
-    prev_390.addEventListener('click', prev_390_);
-    function next_390_() {
-        widthImg = widthImg + all_390[0].offsetWidth + 30
-        if (widthImg >= 390) {
-            widthImg = 390
-        }
-        all_390[i].style.transform = `translateX(${widthImg}px)`
-    }
-    function prev_390_() {
-        widthImg = widthImg - all_390[1].offsetWidth + 30
-        if (widthImg >= -390) {
-            widthImg = 390
-        }
-        all_390[i].style.transform = `translateX(${widthImg}px)`
-    }
-});
+all_390.forEach((element)=>{
+element.style.width = cont_390.clientWidth +'px'
+element.style.width = cont_390.clientWidth +'px'
+console.log(element)
+})
+cont_390.addEventListener('mousemove', function (e) {
+    e.preventDefault()
+})
+
+prev_390.addEventListener('click', function (){
+    cont_390.scrollTo({left:cont_390.scrollLeft - cont_390.clientWidth - 30 ,   behavior: "smooth"}) 
+})
+next_390.addEventListener('click', function (){
+    cont_390.scrollTo({left:cont_390.scrollLeft + cont_390.clientWidth + 30 ,   behavior: "smooth"}) 
+})
+
+
+// let widthImg = 0
+// all_390.forEach((_, i) => {
+//     next_390.addEventListener('click', next_390_);
+//     prev_390.addEventListener('click', prev_390_);
+
+//     prev_390.disabled = false
+//     function next_390_() {
+//         widthImg = widthImg - all_390[0].clientWidth
+//         if (widthImg <= -384) {
+//             next_390.disabled = true
+//         }
+//         all_390[i].style.transform = `translateX(${widthImg}px)`
+//     }
+
+//     function prev_390_() {
+        
+//         next_390.disabled = false
+//         if (widthImg >= -390) {
+//             widthImg = widthImg + all_390[0].clientWidth
+//         }
+//         if (widthImg > 0) {
+//             prev_390.disabled = true
+//         }
+        
+//         all_390[i].style.transform = `translateX(${widthImg}px)`
+//     }
+// });
+
 
 
 
