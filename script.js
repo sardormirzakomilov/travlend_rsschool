@@ -130,11 +130,13 @@ let cont_390 = document.querySelector('.media_slide_390 .container')
 let _item1 = document.querySelector('._item1')
 let _item2 = document.querySelector('._item2')
 let _item3 = document.querySelector('._item3')
+let slide390_img1 = document.querySelector('#slide390_img1')
+let slide390_img2 = document.querySelector('#slide390_img2')
+let slide390_img3 = document.querySelector('#slide390_img3')
 
-all_390.forEach((element)=>{
+all_390.forEach((element )=>{
 element.style.width = cont_390.clientWidth +'px'
 element.style.width = cont_390.clientWidth +'px'
-console.log(element)
 })
 cont_390.addEventListener('mousemove', function (e) {
     e.preventDefault()
@@ -148,33 +150,22 @@ next_390.addEventListener('click', function (){
 })
 
 
-// let widthImg = 0
-// all_390.forEach((_, i) => {
-//     next_390.addEventListener('click', next_390_);
-//     prev_390.addEventListener('click', prev_390_);
+_item1.addEventListener('click', function (){ 
+    slide390_img1.style.transform = 'translateX(0px)'
+    slide390_img2.style.transform = 'translateX(0px)'
+    slide390_img3.style.transform = 'translateX(0px)'
+})
+_item2.addEventListener('click', function (){ 
+    slide390_img2.style.transform = 'translateX(-365px)'
+    slide390_img1.style.transform = 'translateX(-365px)'
+    slide390_img3.style.transform = 'translateX(-365px)'
+})
+_item3.addEventListener('click', function (){ 
+    slide390_img2.style.transform = 'translateX(-730px)'
+    slide390_img1.style.transform = 'translateX(-730px)'
+    slide390_img3.style.transform = 'translateX(-730px)'
+})
 
-//     prev_390.disabled = false
-//     function next_390_() {
-//         widthImg = widthImg - all_390[0].clientWidth
-//         if (widthImg <= -384) {
-//             next_390.disabled = true
-//         }
-//         all_390[i].style.transform = `translateX(${widthImg}px)`
-//     }
-
-//     function prev_390_() {
-        
-//         next_390.disabled = false
-//         if (widthImg >= -390) {
-//             widthImg = widthImg + all_390[0].clientWidth
-//         }
-//         if (widthImg > 0) {
-//             prev_390.disabled = true
-//         }
-        
-//         all_390[i].style.transform = `translateX(${widthImg}px)`
-//     }
-// });
 
 
 

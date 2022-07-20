@@ -999,11 +999,10 @@ header nav ul .li_390,
   }
   ._390_img_div{
     width: 100%;
+    position: relative;
     transition: .8s;
   }
-  ._390_img_div img{
-    position: relative;
-  }
+  
 
   ._390_img_div h2{
     position: absolute;
